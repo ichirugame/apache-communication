@@ -1,0 +1,1 @@
+cat /var/log/httpd/access_log | awk '{TRAFFIC += $NF} END {print TRAFFIC}' > /var/www/html/www/gb.txt
